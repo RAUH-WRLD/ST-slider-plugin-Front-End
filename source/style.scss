@@ -1,0 +1,40 @@
+@import "../node_modules/normalize.css/normalize";
+body{
+    min-width: 1270px;
+}
+.ST-slider{
+    max-width: 1270px;
+    margin: 100px auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    max-height: 40px;
+}
+.prev{
+    margin-top: 250px;
+    margin-right: 100px;
+}
+.next{
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.not-active{
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
+.open-animation{
+    transform: translate(80px, 0);
+    transition: 0.6s;
+}
+.default{
+    transform: translate(0, 0);
+    transition: 0.6s;
+}
+.close-animation{
+    transform: translate(-80px, 0);
+    transition: 0.6s;
+}
